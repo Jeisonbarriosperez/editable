@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+
+        .back {
+            position: fixed;
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #dcef63;
+            animation-name: backdiv;
+            animation-duration: 3500ms;
+            animation-iteration-count: infinite;
+        }
+
+        .heart {
+            position: absolute;
+            margin: auto;
+            top: 170px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color:  #e1ff00;
+            height: 150px;
+            width: 150px;
+            transform: rotate(-45deg);
+            animation-name: beat;
+            animation-duration: 3500ms;
+            animation-iteration-count: infinite;
+        }
+
+        .heart:after {
+            background-color: #e1ff00;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 0;
+            left: 80px;
+        }
+
+        .heart:before {
+            background-color: #e1ff00;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: -80px;
+            left: 0;
+        }
+
+        @keyframes backdiv {
+            50% {
+                background: white;
+            }
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+
+            50% {
+                transform: scale(0.6) rotate(-45deg);
+            }
+        }
+
+        .bday {
+            text-align: center;
+            width: 100%;
+            font-size: 48px;
+            font-family:  'Times New Roman', Times, serif;
+            font-weight: 600;
+            color: red;
+            margin: 20px auto;
+            padding: 15px;
+
+        }
+
+        button {
+            background-image :linear-gradient(to right, rgb(224, 101, 101), red); 
+            border: none;
+            border-radius: 5px;
+            display: block; 
+            margin: 30px auto; 
+            padding: 12px 25px; 
+            color: white; 
+            border: none;
+            margin-top: 70vh;
+             
+        }
+        a{
+            direction: none;
+            color: black;
+            font-weight: 20px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+    <title>Jeison Barrios Perez</title>
+</head>
+<body>
+    <audio autoplay>
+        <source src="../recursos//videos/Felipe Pelaez - Cuando Quieras Quiero (Cover Audio) (mp3cut.net).mp3" type="audio/mp3"> 
+    </audio>
+    <div class="back">
+        <div class="bday">PARA TI CARIÑO MY LUV💛💫<br> </div>
+        <div class="heart"></div>
+        <footer>
+            <div class="boton">
+                <button><a href="flor.html"><span>SIGUIENTE</span></a></button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
