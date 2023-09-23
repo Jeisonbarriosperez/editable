@@ -26,7 +26,7 @@
             right: 0;
             bottom: 0;
             left: 0;
-            background-color:  #e1ff00;
+            background-color: red;
             height: 150px;
             width: 150px;
             transform: rotate(-45deg);
@@ -36,7 +36,7 @@
         }
 
         .heart:after {
-            background-color: #e1ff00;
+            background-color: red;
             content: "";
             border-radius: 50%;
             position: absolute;
@@ -47,7 +47,7 @@
         }
 
         .heart:before {
-            background-color: #e1ff00;
+            background-color: red;
             content: "";
             border-radius: 50%;
             position: absolute;
@@ -95,12 +95,13 @@
             color: white; 
             border: none;
             margin-top: 70vh;
-             
+            border-radius: 1cm;
         }
         a{
-            direction: none;
-            color: black;
-            font-weight: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
         }
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -110,14 +111,14 @@
 </head>
 <body>
     <audio autoplay>
-        <source src="../recursos//videos/Felipe Pelaez - Cuando Quieras Quiero (Cover Audio) (mp3cut.net).mp3" type="audio/mpeg"> 
+        <source src="../recursos/videos/Solo Tú – LETRA _ Samuel Adrián.mp3" type="audio/mpeg"> 
     </audio>
     <div class="back">
-        <div class="bday">PARA TI CARIÑO MY LUV💛💫<br> </div>
+        <div class="bday">CON CARIÑO<br> </div>
         <div class="heart"></div>
         <footer>
             <div class="boton">
-                <button><a href="flor.html"><span>SIGUIENTE</span></a></button>
+                <button><a href="flor.html" class="sin-subrayado"><span>SIGUIENTE</span></a></button>
             </div>
         </footer>
     </div>
